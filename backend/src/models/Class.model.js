@@ -39,13 +39,13 @@ const Class = sequelize.define(
   }
 );
 
-// // Association with IntakeModules (One-to-Many)
+// Association with IntakeModules (One-to-Many)
 // Class.belongsTo('IntakeModules', {
 //   foreignKey: 'intake_module_id',
 //   targetKey: 'intake_module_id',
 // });
 
-// // Association with Lecturer (One-to-Many)
+// Association with Lecturer (One-to-Many)
 // Class.belongsTo('Lecturer', {
 //   foreignKey: 'lecturer_id',
 //   targetKey: 'staff_id',
