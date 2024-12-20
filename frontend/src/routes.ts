@@ -22,11 +22,16 @@ const routeConfig: Routes = [
   //   component: SidebarComponent,
   //   title: "Sidebar",
   // },
-  {
-    path: "",
-    component: SidebarAdminComponent,
-    title: "Sidebar Admin",
-  },
+  // {
+  //   path: "",
+  //   redirectTo: "login",
+  //   pathMatch: "full",
+  // },
+  // {
+  //   path: "",
+  //   component: SidebarAdminComponent,
+  //   title: "Sidebar Admin",
+  // },
 
   {
     path: "lecturer-module-view",
@@ -97,9 +102,9 @@ const routeConfig: Routes = [
     title: "Module Detail Student View",
   },
   {
-    path: "login",
+    path: "",
     component: LoginComponent,
-    title: "Login-View",
+    title: "Login",
   },
 ];
 

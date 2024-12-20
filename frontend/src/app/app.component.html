@@ -4,9 +4,13 @@
     <router-outlet></router-outlet>
   </section>
 </main> -->
-<main class="app-container">
+<main class="app-container" *ngIf="!isLoginPage()">
   <sidebar-admin></sidebar-admin>
   <section class="main-content">
     <router-outlet></router-outlet>
   </section>
 </main>
+
+<section *ngIf="isLoginPage()">
+  <router-outlet></router-outlet>
+</section>
