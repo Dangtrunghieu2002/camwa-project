@@ -4,5 +4,8 @@
     "jest": "^29.7.0",
     "mockingoose": "^2.16.2",
     "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "@angular/forms": "^19.0.5"
   }
 }

@@ -113,6 +113,7 @@ table td {
   padding: 12px;
   text-align: center;
   vertical-align: middle !important;
+  white-space: no-wrap;
 }
 
 table th {

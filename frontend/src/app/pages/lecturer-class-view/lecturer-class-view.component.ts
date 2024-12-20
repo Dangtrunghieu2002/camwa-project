@@ -15,23 +15,24 @@ export class LecturerClassViewComponent {
 
   showInviteModal: boolean = false;
   showRemoveModal: boolean = false;
+
   // Define the scheduleData array
   scheduleData = [
     { date: "01/05/2020", startTime: "9:00", endTime: "10:30" },
-    { date: "01/05/2020", startTime: "1:00", endTime: "2:30" },
-    { date: "02/05/2020", startTime: "9:00", endTime: "10:30" },
-    { date: "02/05/2020", startTime: "1:00", endTime: "2:30" },
-    { date: "03/05/2020", startTime: "9:00", endTime: "10:30" },
-    { date: "03/05/2020", startTime: "1:00", endTime: "2:30" },
-    { date: "04/05/2020", startTime: "9:00", endTime: "10:30" },
-    { date: "03/05/2020", startTime: "1:00", endTime: "2:30" },
-    { date: "04/05/2020", startTime: "9:00", endTime: "10:30" },
-    { date: "03/05/2020", startTime: "1:00", endTime: "2:30" },
-    { date: "04/05/2020", startTime: "9:00", endTime: "10:30" },
-    { date: "03/05/2020", startTime: "1:00", endTime: "2:30" },
-    { date: "04/05/2020", startTime: "9:00", endTime: "10:30" },
-    { date: "03/05/2020", startTime: "1:00", endTime: "2:30" },
-    { date: "04/05/2020", startTime: "9:00", endTime: "10:30" },
+    { date: "08/05/2020", startTime: "1:00", endTime: "2:30" },
+    { date: "15/05/2020", startTime: "9:00", endTime: "10:30" },
+    { date: "22/05/2020", startTime: "1:00", endTime: "2:30" },
+    // { date: "29/05/2020", startTime: "9:00", endTime: "10:30" },
+    // { date: "03/06/2020", startTime: "1:00", endTime: "2:30" },
+    // { date: "04/05/2020", startTime: "9:00", endTime: "10:30" },
+    // { date: "03/05/2020", startTime: "1:00", endTime: "2:30" },
+    // { date: "04/05/2020", startTime: "9:00", endTime: "10:30" },
+    // { date: "03/05/2020", startTime: "1:00", endTime: "2:30" },
+    // { date: "04/05/2020", startTime: "9:00", endTime: "10:30" },
+    // { date: "03/05/2020", startTime: "1:00", endTime: "2:30" },
+    // { date: "04/05/2020", startTime: "9:00", endTime: "10:30" },
+    // { date: "03/05/2020", startTime: "1:00", endTime: "2:30" },
+    // { date: "04/05/2020", startTime: "9:00", endTime: "10:30" },
   ];
 
   studentList = [
@@ -62,46 +63,46 @@ export class LecturerClassViewComponent {
     },
     {
       name: "Student 6",
-      id: "44493",
+      id: 44493,
       status: "A",
     },
     {
-      name: "Student 5",
+      name: "Student 7",
       id: 20045,
       status: "P",
     },
     {
-      name: "Student 6",
+      name: "Student 8",
       id: "44493",
       status: "A",
     },
     {
-      name: "Student 5",
+      name: "Student 9",
       id: 20045,
       status: "P",
     },
     {
-      name: "Student 6",
+      name: "Student 10",
       id: "44493",
       status: "A",
     },
     {
-      name: "Student 5",
+      name: "Student 11",
       id: 20045,
       status: "P",
     },
     {
-      name: "Student 6",
+      name: "Student 12",
       id: "44493",
       status: "A",
     },
     {
-      name: "Student 5",
+      name: "Student 13",
       id: 20045,
       status: "P",
     },
     {
-      name: "Student 6",
+      name: "Student 13",
       id: "44493",
       status: "A",
     },

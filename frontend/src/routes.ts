@@ -14,7 +14,7 @@ import { ModuleAdminComponent } from "./app/pages/module-admin/module-admin.comp
 import { ModuleDetailAdminComponent } from "./app/pages/module-admin/module-detail-admin/module-detail-admin.component";
 import { ModuleStudentComponent } from "./app/pages/module-student/module-student.component";
 import { ModuleDetailStudentComponent } from "./app/pages/module-student/module-detail-student/module-detail-student.component";
-import { LoginComponent } from "./app/pages/login/login.component";
+
 import { LoginPageComponent } from "./app/pages/login-page/login-page.component";
 
 const routeConfig: Routes = [
@@ -49,11 +49,7 @@ const routeConfig: Routes = [
     component: FacultyAssistantModuleViewComponent,
     title: "Faculty Module View",
   },
-  // {
-  //   path: "class-details-view",
-  //   component: ClassDetailsViewComponent,
-  //   title: "Class Details View",
-  // },
+
   {
     path: "request-admin",
     component: RequestAdminComponent,
@@ -88,11 +84,6 @@ const routeConfig: Routes = [
     path: "module-detail-student",
     component: ModuleDetailStudentComponent,
     title: "Module Detail Student View",
-  },
-  {
-    path: "login",
-    component: LoginComponent,
-    title: "Login View",
   },
 ];
 

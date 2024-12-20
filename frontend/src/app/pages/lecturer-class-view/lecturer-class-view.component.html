@@ -383,4 +383,117 @@
       </tbody>
     </table>
   </div>
+
+  <div *ngIf="activeTab === 'moduleReport'">
+    <div class="table-wrapper">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Student name</th>
+            <th>Student ID</th>
+            <th *ngFor="let class of scheduleData; let i = index">
+              {{ class.date }}
+            </th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of studentList; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.id }}</td>
+            <td *ngFor="let class of scheduleData" class="text-center">
+              <span
+                [class.present]="student.status === 'P'"
+                [class.absent]="student.status === 'A'"
+                class="status-badge"
+              >
+                {{ student.status }}
+              </span>
+            </td>
+
+            <td>
+              <div class="action-buttons">
+                <button
+                  type="button"
+                  class="tab"
+                  data-toggle="modal"
+                  data-target="#editModal"
+                >
+                  Edit
+                </button>
+
+                <!-- Modal content -->
+                <div
+                  class="modal fade"
+                  id="editModal"
+                  role="dialog"
+                  aria-labelledby="editModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="editModalLabel">
+                          Edit attendance
+                        </h3>
+                      </div>
+
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="studentId">Student ID</label>
+                            <input
+                              type="number"
+                              id="studentId"
+                              value=""
+                              class="form-control"
+                            />
+                          </div>
+
+                          <div class="form-group">
+                            <label for="program">Program</label>
+                            <select id="program" class="form-control">
+                              <option selected>CSE</option>
+                              <option>BBA</option>
+                              <option>MEN</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="status">Status</label>
+                            <select id="status" class="form-control">
+                              <option>Present</option>
+                              <option selected>Absent</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="reasons">Reasons</label>
+                            <select id="reasons" class="form-control">
+                              <option selected>False attendance</option>
+                              <option>Medical leave</option>
+                              <option>Other</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="submit" class="send-btn">Save</button>
+                        <button class="cancel-btn" data-dismiss="modal">
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
