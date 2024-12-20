@@ -7,6 +7,8 @@ import { LecturerClassViewComponent } from "./app/pages/lecturer-class-view/lect
 import { FacultyAssistantModuleViewComponent } from "./app/pages/faculty-assistant-module-view/faculty-assistant-module-view.component";
 import { FacultyAssistantClassViewComponent } from "./app/pages/faculty-assistant-class-view/faculty-assistant-class-view.component";
 
+import { LoginPageComponent } from "./app/pages/login-page/login-page.component";
+
 import { RequestAdminComponent } from "./app/pages/request-admin/request-admin.component";
 import { AccountAdminComponent } from "./app/pages/account-admin/account-admin.component";
 import { AccountDetailAdminComponent } from "./app/pages/account-admin/account-detail-admin/account-detail-admin.component";
@@ -14,8 +16,6 @@ import { ModuleAdminComponent } from "./app/pages/module-admin/module-admin.comp
 import { ModuleDetailAdminComponent } from "./app/pages/module-admin/module-detail-admin/module-detail-admin.component";
 import { ModuleStudentComponent } from "./app/pages/module-student/module-student.component";
 import { ModuleDetailStudentComponent } from "./app/pages/module-student/module-detail-student/module-detail-student.component";
-
-import { LoginPageComponent } from "./app/pages/login-page/login-page.component";
 
 const routeConfig: Routes = [
   {
